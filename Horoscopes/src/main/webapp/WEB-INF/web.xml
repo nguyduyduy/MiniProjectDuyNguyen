@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+        version="2.5">
+
+    <listener>
+        <listener-class>com.servlets.DependencyLoaderListener</listener-class>
+    </listener>
+
+
+<servlet>
+    <servlet-name>userServlet</servlet-name>
+    <servlet-class>com.servlets.UserServlet</servlet-class>
+</servlet>
+
+    <servlet-mapping>
+        <servlet-name>userServlet</servlet-name>
+        <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>com.servlets.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>moodServlet</servlet-name>
+        <servlet-class>com.servlets.MoodServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>moodServlet</servlet-name>
+        <url-pattern>/mood</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</web-app>

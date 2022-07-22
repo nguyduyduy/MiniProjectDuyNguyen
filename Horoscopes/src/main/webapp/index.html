@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+body {text-align: center;}
+form {display: inline-block;}
+</style>
+</head>
+<body>
+
+<div>
+    <h2>User Login</h2>
+    <br>
+    <br>
+    <h4> If you already have an account, Sign In!</h4>
+    <form method="get" action="user">
+        <label> Enter Your Username </label>
+        <br>
+        <input type="text" id="username-sign-in">
+        <br>
+        <label> Enter Your Password </label>
+        <br>
+        <!--        name is referring to the servlet get-->
+        <input type="password" id="password-sign-in">
+        <br>
+        <br>
+        <input type="submit" id="login-button" value="Login">
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <!--    action attribute is directing towards our servlet that we created-->
+    <h6> If You Don't Have An Account, Sign Up! </h6>
+     <form> 
+
+        <input type="submit" id="sign-up-button" value="I Need To Sign Up!">
+
+
+
+    </form>
+
+</div>
+
+<script src="./Javascript/index.js"></script>
+
+</body>
+</html>
