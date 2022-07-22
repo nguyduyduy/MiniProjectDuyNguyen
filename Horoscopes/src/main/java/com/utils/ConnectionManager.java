@@ -34,7 +34,7 @@ public class ConnectionManager {
         try{
 
             Properties props = new Properties();
-            FileReader fileReader = new FileReader("/Users/duynguyen/mini_project_duynguyen/Horoscopes" + "/src/main/resources/jdbc.properties");
+            FileReader fileReader = new FileReader("/Users/duynguyen/Documents/MiniProjectDuyNguyen/Horoscopes" + "/src/main/resources/jdbc.properties");
 
             props.load(fileReader);
 

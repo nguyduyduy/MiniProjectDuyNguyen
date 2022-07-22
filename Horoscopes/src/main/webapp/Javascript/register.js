@@ -47,5 +47,7 @@ submitButton.addEventListener("click", (event) => {
     console.log(xhttp);
     xhttp.send(JSON.stringify(registerInfo));
     
+    alert("Account created succesfully");
+    
 
 })
